@@ -1,0 +1,24 @@
+{
+    "name": "ludmanp/typicms-niceartisan",
+    "description": "Adds niceartisan package to TypiCMS admin for superuser",
+    "keywords": ["laravel", "TypiCMS", "nice-artisan"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mark Leidman",
+            "email": "mark@leidman.lv",
+            "homepage": "https://ludmanp.github.io"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "bestmomo/nice-artisan": "^1.1"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "TypiCMS\\Modules\\NiceArtisan\\": "src"
+        }
+    }
+}
