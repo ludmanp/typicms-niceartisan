@@ -22,6 +22,7 @@ class SidebarViewComposer
                 $item->icon = config('typicms.niceartisan.sidebar.icon', 'icon fa fa-fw fa-code');
                 $item->weight = 200;
                 $item->route('niceartisan');
+                $item->target_blank=true;
             });
         });
     }

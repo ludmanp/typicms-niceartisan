@@ -33,3 +33,9 @@ php artisan vendor:publish --tag=niceartisan:config
 You can change options and commands in `config/commands.php`. The menu is dynamically created with this config.
  
 Now it is available in TypiCMS admin menu for superadmin or user with appropriate permissions. 
+
+To open Nice Artisan in new window change `view/vendor/sidebar/item` second line adding
+```
+@if($item->target_blank??false)target="_blank"@endif
+``` 
+before closing `a` tag
