@@ -24,4 +24,12 @@ and alias
 'nice_artisan' => \TypiCMS\Modules\NiceArtisan\Http\Middleware\NiceArtisan::class,
 ```
 
+Last copy the package config to your local config with the publish command:
+
+```
+php artisan vendor:publish --tag=niceartisan:config
+``` 
+
+You can change options and commands in `config/commands.php`. The menu is dynamically created with this config.
  
+Now it is available in TypiCMS admin menu for superadmin or user with appropriate permissions. 
